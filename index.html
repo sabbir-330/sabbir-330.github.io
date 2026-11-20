@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-variant="4">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <meta name="description" content="Personal portfolio website.">
+  <meta name="theme-color" content="#0A0F0D" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F4F7F5" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Apply saved theme before first paint (no flash) -->
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search), v = q.get("v"); window.__board = q.get("board"); window.__tree = q.get("tree");
+      if (/^[0-4]$/.test(v || "")) document.documentElement.setAttribute("data-variant", v);
+      try {
+        var saved = localStorage.getItem("portfolio-theme");
+        var light = saved ? saved === "light" : window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.setAttribute("data-theme", light ? "light" : "dark");
+      } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/fa/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=1795170720">
+</head>
+<body class="pre">
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <img id="plLogo" src="assets/images/logo.svg" alt="" width="56" height="56">
+  <script>(function(){var v=document.documentElement.getAttribute("data-variant");if(/^[1234]$/.test(v||""))document.getElementById("plLogo").src="assets/images/logo-v"+(v=="4"?"3":v)+".svg";})();</script>
+  <div class="pl-bar"><i></i></div>
+  <p>Loading Portfolio</p>
+</div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<a href="#home" class="skip-link">Skip to main content</a>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="#home" id="brand">
+      <img id="brandLogo" src="assets/images/logo.svg" alt="" width="40" height="40">
+      <span id="brandText">Portfolio</span><span class="brand-dot">.</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation"></nav>
+
+    <div class="nav-right">
+      <button class="cmdk-trigger" id="cmdkTrigger" type="button" aria-label="Open search">
+        <i class="fas fa-magnifying-glass"></i>
+        <span class="cmdk-text">Search</span>
+        <span class="cmdk-keys"><kbd>Ctrl</kbd><kbd>K</kbd></span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode">
+        <span class="toggle-knob"><img class="tk-sun" src="assets/icons/sun.svg" alt="" width="20" height="20"><img class="tk-moon" src="assets/icons/moon.svg" alt="" width="20" height="20"></span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ================= HOME / HERO ================= -->
+  <section id="home" class="hero">
+    <div class="hero-blob b1" aria-hidden="true"></div><div class="hero-blob b2" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="hero-eyebrow"><span id="heroEyebrow">HELLO, I'M</span><i></i></p>
+        <h1 class="hero-name">
+          <span id="heroNameMain">NAME</span><br>
+          <span class="hero-name-muted" id="heroNameMuted">SURNAME</span>
+        </h1>
+        <p class="hero-role"><span id="heroRole">Role</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="hero-desc" id="heroDesc"></p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="btnWork"><span>View My Work</span> <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="btn btn-cv" id="btnCv"><span>Download CV</span> <i class="fas fa-download"></i></a>
+        </div>
+
+        <div class="socials" id="socials">
+          <a href="#" data-social="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" data-social="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" data-social="email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" data-social="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" data-social="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" data-social="telegram" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+
+        <div class="hero-stats" id="heroStats" aria-label="Quick stats"></div>
+      </div>
+
+      <div class="hero-photo" id="heroPhotoBox">
+        <img id="heroPhoto" src="assets/images/placeholder.svg" alt="Profile photo" fetchpriority="high" decoding="async">
+        <div class="float-badges" id="heroBadges"></div>
+      </div>
+    </div>
+    <a class="hero-scroll" href="#news" aria-label="Scroll down"><span>SCROLL</span><i class="hero-scroll-line"></i></a>
+  </section>
+
+  <!-- ================= LATEST UPDATES ================= -->
+  <section id="news" class="section">
+    <div class="container">
+      <header class="sec-head"><p class="sec-eyebrow">NEWS</p><h2 id="newsTitle">Latest Updates</h2><p id="newsSub"></p></header>
+      <div class="news-list" id="newsList"></div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERTISE & JOURNEY ================= -->
+  <section id="expertise" class="section alt">
+    <div class="container">
+      <header class="sec-head"><p class="sec-eyebrow">JOURNEY</p><h2 id="expTitle">Expertise & Journey</h2></header>
+      <div class="exp-layout">
+        <aside class="exp-side">
+          <p class="exp-label"><i class="fas fa-bookmark"></i> MY JOURNEY</p>
+          <nav class="exp-menu" id="expTabs" aria-label="Expertise sections"></nav>
+        </aside>
+        <div class="exp-main">
+          <div class="exp-panels card" id="expPanels"></div>
+          <div id="summaryCard"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="container">
+      <header class="sec-head"><p class="sec-eyebrow">PROJECTS</p><h2 id="projTitle">Featured Projects</h2><p id="projSub"></p></header>
+      <div class="proj-tools">
+        <div class="filters" id="projFilters"></div>
+      </div>
+      <div class="proj-grid" id="projGrid"></div>
+      <p class="proj-empty" id="projEmpty" hidden>No projects match your search.</p>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="container">
+      <header class="sec-head"><h2 id="ctTitle">Get In Touch</h2><p id="ctSub"></p></header>
+      <div class="contact-grid">
+        <div class="contact-card" id="contactCard"></div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="row2">
+            <label>Name<input type="text" name="name" required autocomplete="name"></label>
+            <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <label>Subject<input type="text" name="subject" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn-primary" id="ctSend"><span>Send Message</span> <i class="fas fa-paper-plane"></i></button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid" id="footerGrid"></div>
+  <div class="container footer-bottom" id="footerBottom"></div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<!-- ================= OVERLAYS ================= -->
+<div class="modal" id="lightbox" hidden>
+  <button class="modal-close" type="button" data-close aria-label="Close"><i class="fas fa-xmark"></i></button>
+  <button class="lb-nav prev" type="button" id="lbPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav next" type="button" id="lbNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  <p class="lb-cap" id="lbCap"></p>
+</div>
+<div class="modal" id="caseModal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="caseTitle">
+    <button class="modal-close" type="button" data-close aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <div id="caseBody"></div>
+  </div>
+</div>
+<div class="modal" id="newsModal" hidden>
+  <div class="modal-box na-box" role="dialog" aria-modal="true" aria-label="All updates">
+    <button class="modal-close" type="button" data-close aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <div id="newsArchive"></div>
+  </div>
+</div>
+<div class="modal" id="cvModal" hidden>
+  <div class="modal-box wide" role="dialog" aria-modal="true" aria-label="Resume preview">
+    <button class="modal-close" type="button" data-close aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <iframe id="cvFrame" title="CV preview"></iframe>
+    <p class="cv-fallback">Preview not showing? <a id="cvFallback" href="#" download>Download the PDF</a></p>
+  </div>
+</div>
+
+<!-- ================= CHATBOT (bottom-right corner) ================= -->
+<button class="chat-fab" id="chatFab" type="button" aria-label="Ask Me">
+  <i class="far fa-message"></i>
+  <span class="chat-status" aria-hidden="true"></span>
+</button>
+<div class="chat" id="chatBox" hidden>
+  <div class="chat-head"><span id="chatTitle">Ask Me</span><button type="button" id="chatClose" aria-label="Close chat"><i class="fas fa-xmark"></i></button></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-topics" id="chatTopics" aria-label="Topics"></div>
+  <form class="chat-form" id="chatForm">
+    <input type="text" id="chatInput" placeholder="Ask something..." autocomplete="off">
+    <button type="submit" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
+
+<!-- ================= SEARCH (Ctrl + K) ================= -->
+<div class="cmdk-overlay" id="cmdkOverlay" hidden>
+  <div class="cmdk-box" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="cmdk-input-row">
+      <i class="fas fa-magnifying-glass"></i>
+      <input type="text" id="cmdkInput" placeholder="Search sections..." autocomplete="off" spellcheck="false">
+      <kbd>Esc</kbd>
+    </div>
+    <div class="cmdk-results" id="cmdkResults"></div>
+  </div>
+</div>
+
+<noscript><p style="padding:120px 20px">Please enable JavaScript to view this portfolio.</p></noscript>
+<script src="script.js?v=1795170720"></script>
+<script src="hero-net.js?v=1795170720" defer></script>
+<script src="nav-fx.js?v=1795170720" defer></script>
+</body>
+</html>

@@ -1,0 +1,852 @@
+{
+  "meta": {
+    "lastUpdated": "2026-11-15",
+    "version": "1.0",
+    "location": "Bangladesh"
+  },
+  "brand": {
+    "text": "Sabbir",
+    "logo": "assets/images/logo.svg"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "#home"
+    },
+    {
+      "label": "News",
+      "href": "#news"
+    },
+    {
+      "label": "Expertise & Journey",
+      "href": "#expertise",
+      "dropdown": [
+        {
+          "label": "Focus",
+          "href": "#expertise",
+          "tab": "focus"
+        },
+        {
+          "label": "Skills",
+          "href": "#expertise",
+          "tab": "skills"
+        },
+        {
+          "label": "Experience",
+          "href": "#expertise",
+          "tab": "experience"
+        },
+        {
+          "label": "Education",
+          "href": "#expertise",
+          "tab": "education"
+        },
+        {
+          "label": "Certificates",
+          "href": "#expertise",
+          "tab": "certificates"
+        },
+        {
+          "label": "Achievements",
+          "href": "#expertise",
+          "tab": "achievements"
+        },
+        {
+          "label": "Resume",
+          "href": "#expertise",
+          "tab": "resume"
+        }
+      ]
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Get In Touch",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "eyebrow": "HELLO, I'M",
+    "nameMain": "MD SABBIR",
+    "nameMuted": "AHMED",
+    "role": "Software Engineering Student",
+    "description": "I turn ideas into simple designs and clean, responsive web pages. Constantly learning, coding and solving problems.",
+    "photo": "assets/images/profile.webp",
+    "photoAlt": "Md Sabbir Ahmed",
+    "primaryButton": {
+      "text": "View My Work",
+      "href": "#projects"
+    },
+    "cvButton": {
+      "text": "Download CV",
+      "file": "assets/cv/CV_Md_Sabbir_Ahmed.pdf",
+      "downloadName": "CV_Md_Sabbir_Ahmed.pdf"
+    },
+    "typed": [
+      "Software Engineering Student",
+      "Web Development Learner",
+      "System Analysis & Design Learner",
+      "Capstone Project Builder"
+    ],
+    "badges": [
+      {
+        "icon": "fa-graduation-cap",
+        "text": "DIU · SWE"
+      }
+    ]
+  },
+  "socials": {
+    "github": "https://github.com/sabbir-330",
+    "linkedin": "",
+    "email": "sabbirarnob171@gmail.com",
+    "facebook": "https://www.facebook.com/share/1AAWHW1uB9/",
+    "instagram": "",
+    "telegram": "https://t.me/Sabbir_333"
+  },
+  "stats": [
+    {
+      "value": "auto:projects",
+      "suffix": "",
+      "label": "Projects"
+    },
+    {
+      "value": "auto:skills",
+      "suffix": "+",
+      "label": "Skills"
+    },
+    {
+      "value": "auto:certificates",
+      "suffix": "",
+      "label": "Certificates"
+    },
+    {
+      "value": "auto:trimesters",
+      "suffix": "",
+      "label": "Trimesters Done"
+    }
+  ],
+  "academics": {
+    "university": "Daffodil International University",
+    "degree": "B.Sc. in Software Engineering",
+    "location": "Bangladesh",
+    "latestCgpa": "3.63",
+    "overallCgpa": "3.50",
+    "currentTrimester": 6,
+    "totalTrimesters": 12,
+    "expectedGraduation": "Jan 2029"
+  },
+  "news": {
+    "title": "Latest Updates",
+    "subtitle": "Real milestones from my actual work. Newest first.",
+    "items": [
+      {
+        "date": "2026-11-19",
+        "badge": "Certified",
+        "title": "Introduction to Linux (LFS101)",
+        "text": "Completed the Introduction to Linux course from The Linux Foundation and earned the certificate.",
+        "meta": "The Linux Foundation"
+      },
+      {
+        "date": "2026-11-20",
+        "badge": "In Progress",
+        "title": "Personal portfolio website",
+        "text": "Building this single-page portfolio with HTML, CSS and JavaScript. All content comes from one JSON file.",
+        "meta": "Portfolio Website Development"
+      },
+      {
+        "date": "2026-11-09",
+        "badge": "Submitted",
+        "title": "Activity, State and Block diagrams",
+        "text": "Submitted my part of Performance 2 for the fraud detection system: Use Case, Activity, State and Block diagrams.",
+        "meta": "SE-231 System Analysis & Design Capstone"
+      },
+      {
+        "date": "2026-04-16",
+        "badge": "Milestone",
+        "title": "Career Planning Roadmap seminar",
+        "text": "Took part in the day-long career planning seminar organised at DIU.",
+        "meta": "Daffodil International University"
+      },
+      {
+        "date": "2026-04-11",
+        "badge": "Certified",
+        "title": "CS301: Computer Architecture",
+        "text": "Completed the 48-hour Saylor University course and earned the certificate.",
+        "meta": "Saylor University"
+      },
+      {
+        "date": "2026-04-11",
+        "badge": "Certified",
+        "title": "Free SQL Certification Course",
+        "text": "Completed the SQL course and received a verified certificate of completion.",
+        "meta": "Intellipaat"
+      },
+      {
+        "date": "2026-04-04",
+        "badge": "Certified",
+        "title": "CS202: Discrete Structures",
+        "text": "Completed the 44-hour Saylor University course and earned the certificate.",
+        "meta": "Saylor University"
+      }
+    ],
+    "style": "timeline",
+    "board": "white",
+    "tree": "line"
+  },
+  "expertise": {
+    "title": "Expertise & Journey",
+    "focus": {
+      "subtitle": "Where my time goes right now.",
+      "cards": [
+        {
+          "icon": "fa-code",
+          "title": "Web Development",
+          "text": "Building responsive pages with HTML, CSS and JavaScript, with content kept in JSON."
+        },
+        {
+          "icon": "fa-diagram-project",
+          "title": "Analysis & Design",
+          "text": "Turning requirements into UML diagrams: Use Case, Activity, State, Sequence and Data Flow."
+        },
+        {
+          "icon": "fa-microchip",
+          "title": "Core CS Basics",
+          "text": "Data structures, algorithms, database systems, operating systems, discrete structures, computer architecture and structured programming."
+        },
+        {
+          "icon": "fa-code-branch",
+          "title": "Real Workflow",
+          "text": "Learning Git and GitHub, writing clean code and finishing projects step by step."
+        }
+      ],
+      "promo": {
+        "title": "Have a question?",
+        "text": "Ask my assistant about my skills, projects or contact details.",
+        "button": "Chat Now"
+      },
+      "title": "What I Focus On",
+      "icon": "fa-star"
+    },
+    "skills": {
+      "subtitle": "Technologies I work with.",
+      "groups": [
+        {
+          "title": "Frontend Development",
+          "icon": "fa-display",
+          "items": [
+            {
+              "name": "HTML5",
+              "desc": "Semantic markup & page structure",
+              "icon": "fab fa-html5",
+              "color": "#e44d26",
+              "level": 82,
+              "img": "assets/icons/html5.svg"
+            },
+            {
+              "name": "CSS3",
+              "desc": "Responsive design & clean UI",
+              "icon": "fab fa-css3-alt",
+              "color": "#1572b6",
+              "level": 80,
+              "img": "assets/icons/css3.svg"
+            },
+            {
+              "name": "JavaScript",
+              "desc": "Interactive & dynamic pages",
+              "icon": "fab fa-js",
+              "color": "#d9a400",
+              "level": 76,
+              "img": "assets/icons/javascript.svg"
+            }
+          ]
+        },
+        {
+          "title": "Languages & Database",
+          "icon": "fa-database",
+          "items": [
+            {
+              "name": "Java",
+              "desc": "Object-oriented programming",
+              "icon": "fab fa-java",
+              "color": "#e76f00",
+              "level": 80,
+              "img": "assets/icons/java.svg"
+            },
+            {
+              "name": "C Programming",
+              "desc": "Structured programming",
+              "icon": "fas fa-code",
+              "color": "#2563eb",
+              "level": 78,
+              "img": "assets/icons/c.svg"
+            },
+            {
+              "name": "SQL",
+              "desc": "Database queries & management",
+              "icon": "fas fa-database",
+              "color": "#0e7490",
+              "level": 78,
+              "img": "assets/icons/sql.svg"
+            }
+          ]
+        },
+        {
+          "title": "Tools & Version Control",
+          "icon": "fa-toolbox",
+          "items": [
+            {
+              "name": "Git",
+              "desc": "Version control",
+              "icon": "fab fa-git-alt",
+              "color": "#f05032",
+              "level": 77,
+              "img": "assets/icons/git.svg"
+            },
+            {
+              "name": "GitHub",
+              "desc": "Code hosting",
+              "icon": "fab fa-github",
+              "color": "#24292f",
+              "level": 76,
+              "img": "assets/icons/github.svg"
+            },
+            {
+              "name": "VS Code",
+              "desc": "Development environment",
+              "icon": "fas fa-laptop-code",
+              "color": "#007acc",
+              "level": 82,
+              "img": "assets/icons/vscode.svg"
+            }
+          ]
+        },
+        {
+          "title": "Backend & APIs",
+          "icon": "fa-server",
+          "items": [
+            {
+              "name": "Node.js",
+              "desc": "JavaScript on the server",
+              "icon": "fab fa-node-js",
+              "color": "#3c873a",
+              "level": 70
+            },
+            {
+              "name": "JSON",
+              "desc": "Data format & JSON-driven content",
+              "icon": "fas fa-code",
+              "color": "#475569",
+              "level": 80
+            },
+            {
+              "name": "APIs",
+              "desc": "Using and building REST APIs",
+              "icon": "fas fa-plug",
+              "color": "#0e7490",
+              "level": 70
+            }
+          ]
+        },
+        {
+          "title": "Analysis & Modeling",
+          "icon": "fa-diagram-project",
+          "items": [
+            {
+              "name": "UML Diagrams",
+              "desc": "Use Case, Activity, State, Sequence, Block, DFD",
+              "icon": "fas fa-diagram-project",
+              "color": "#7c3aed",
+              "level": 80
+            },
+            {
+              "name": "draw.io",
+              "desc": "Drawing and exporting diagrams",
+              "icon": "fas fa-pen-ruler",
+              "color": "#f08705",
+              "level": 82,
+              "img": "assets/icons/drawio.svg"
+            },
+            {
+              "name": "SRS",
+              "desc": "Software requirement specification",
+              "icon": "fas fa-file-lines",
+              "color": "#475569",
+              "level": 75
+            }
+          ]
+        }
+      ],
+      "title": "My Skills",
+      "icon": "fa-layer-group"
+    },
+    "experience": {
+      "subtitle": "Hands-on work from my studies.",
+      "items": [
+        {
+          "when": "6th Trimester",
+          "title": "MindCare: Mental Wellness Platform",
+          "text": "Group project for the web course (Team Phantom, 5 members): a mental wellness platform with a mood tracker and counselor booking. My role is Back-End Developer, building the Node.js and Express API.",
+          "status": "Ongoing"
+        },
+        {
+          "when": "6th Trimester",
+          "title": "Fraud Detection System: Analysis & Design",
+          "text": "Modeling the functional requirements of a banking fraud detection system with UML diagrams. A design project with no code.",
+          "status": "Ongoing"
+        },
+        {
+          "when": "6th Trimester",
+          "title": "Personal Portfolio Website",
+          "text": "A single-page portfolio built with HTML, CSS and JavaScript, using JSON as its database.",
+          "status": "Ongoing"
+        },
+        {
+          "when": "3rd Trimester",
+          "title": "Software Development Capstone",
+          "text": "Worked on a parking slot management system as the capstone project of the course.",
+          "status": "Completed"
+        }
+      ],
+      "title": "Experience",
+      "icon": "fa-briefcase"
+    },
+    "education": {
+      "subtitle": "Academic foundations in Software Engineering at Daffodil International University",
+      "institutions": [
+        {
+          "level": "University",
+          "logo": "fa-graduation-cap",
+          "name": "Daffodil International University",
+          "degree": "B.Sc. in Software Engineering",
+          "when": "Expected graduation: Jan 2029",
+          "where": "Bangladesh"
+        }
+      ],
+      "title": "Education & Credentials",
+      "icon": "fa-graduation-cap"
+    },
+    "certificates": {
+      "subtitle": "Credentials earned alongside coursework.",
+      "items": [
+        {
+          "image": "assets/certs/linux-foundation-lfs101.webp",
+          "type": "Certification",
+          "title": "Introduction to Linux (LFS101)",
+          "text": "Certificate of completion. Issued November 19, 2026.",
+          "issuer": "The Linux Foundation"
+        },
+        {
+          "image": "assets/certs/saylor-cs301.webp",
+          "type": "Coursework",
+          "title": "CS301: Computer Architecture",
+          "text": "48-hour course. Issued April 11, 2026.",
+          "issuer": "Saylor University"
+        },
+        {
+          "image": "assets/certs/intellipaat-sql.webp",
+          "type": "Certification",
+          "title": "Free SQL Certification Course",
+          "text": "Certificate of completion. Issued April 11, 2026.",
+          "issuer": "Intellipaat"
+        },
+        {
+          "image": "assets/certs/saylor-cs202.webp",
+          "type": "Coursework",
+          "title": "CS202: Discrete Structures",
+          "text": "44-hour course. Issued April 4, 2026.",
+          "issuer": "Saylor University"
+        }
+      ],
+      "title": "Certificates",
+      "icon": "fa-award"
+    },
+    "achievements": {
+      "subtitle": "Markers of progress along the way.",
+      "items": [
+        {
+          "title": "Career Planning Seminar",
+          "text": "Participated in the DIU day-long Career Planning Roadmap seminar on April 16, 2026.",
+          "image": "assets/certs/diu-career-seminar.webp",
+          "icon": "fa-people-group"
+        },
+        {
+          "title": "Linux Foundation Certificate",
+          "text": "Completed Introduction to Linux (LFS101) from The Linux Foundation on November 19, 2026.",
+          "icon": "fa-award"
+        },
+        {
+          "title": "Three Certificates in April",
+          "text": "Earned two Saylor University certificates and one Intellipaat certificate during April 2026.",
+          "icon": "fa-award"
+        },
+        {
+          "title": "Capstone Project",
+          "text": "Worked on a parking slot management system for the 3rd trimester capstone.",
+          "icon": "fa-square-parking"
+        },
+        {
+          "title": "Design Documentation",
+          "text": "Prepared Use Case, Activity, State, Sequence, Block and Data Flow diagrams for the fraud detection system.",
+          "icon": "fa-diagram-project"
+        }
+      ],
+      "title": "Achievements",
+      "icon": "fa-trophy"
+    },
+    "resume": {
+      "subtitle": "My CV in one page.",
+      "text": "Education, skills, projects, certificates and seminars on a single page.",
+      "title": "Resume",
+      "icon": "fa-file-lines"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Things I have built and designed so far.",
+    "filters": [
+      "All",
+      "Frontend",
+      "JavaScript",
+      "Design"
+    ],
+    "items": [
+      {
+        "title": "Parking Slot Management",
+        "categories": [
+          "Frontend",
+          "JavaScript"
+        ],
+        "featured": true,
+        "kind": "Academic Project · 3rd Trimester Capstone",
+        "text": "Browser version of my C parking project. 50 slots, first free slot assigned, hourly billing with peak hours and an admin view for search, update and reports.",
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "image": "assets/projects/parking.webp",
+        "repo": "sabbir-330/parking-slot-management",
+        "github": "https://github.com/sabbir-330/parking-slot-management",
+        "demo": "https://sabbir-330.github.io/parking-slot-management/",
+        "caseStudy": null
+      },
+      {
+        "title": "Calculator",
+        "categories": [
+          "Frontend",
+          "JavaScript"
+        ],
+        "featured": false,
+        "kind": "Personal Project",
+        "text": "Clean, keyboard-friendly calculator with percent, sign toggle and long results that shrink to fit the display.",
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "image": "assets/projects/calculator.webp",
+        "repo": "sabbir-330/Calculator",
+        "github": "https://github.com/sabbir-330/Calculator",
+        "demo": "https://sabbir-330.github.io/Calculator/",
+        "caseStudy": null
+      },
+      {
+        "title": "Number Guessing Game",
+        "categories": [
+          "Frontend",
+          "JavaScript"
+        ],
+        "featured": false,
+        "kind": "Personal Project",
+        "text": "Pick a number from 1 to 100. Five tries, with a too high or too low hint after every guess and a history list.",
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "image": "assets/projects/guessing-game.webp",
+        "repo": "sabbir-330/guessing_game",
+        "github": "https://github.com/sabbir-330/guessing_game",
+        "demo": "https://sabbir-330.github.io/guessing_game/",
+        "caseStudy": null
+      },
+      {
+        "title": "Fraud Detection System: Analysis & Design",
+        "categories": [
+          "Design"
+        ],
+        "featured": true,
+        "kind": "Academic Project",
+        "text": "UML analysis of a banking fraud detection system: Use Case, Activity, State, Sequence, Block and Data Flow diagrams.",
+        "tech": [
+          "UML",
+          "draw.io",
+          "SRS"
+        ],
+        "image": "assets/projects/fraud-detection.webp",
+        "repo": "",
+        "github": "",
+        "demo": "",
+        "caseStudy": {
+          "overview": "A group project for the System Analysis & Design capstone. The team models how a bank can detect and investigate fraudulent transactions, starting from a list of functional requirements.",
+          "role": "I modeled four cases from the Actor's point of view: Initiate Card Payment, Analyze Transactions Using AI, Review Suspicious Transactions and Create Fraud Investigation Case. I also drew the Fraud Analyst and System Administrator block diagrams.",
+          "approach": "Each case became an Activity diagram and a State diagram, then Sequence diagrams and Level 1 Data Flow Diagrams, all tied together by one Use Case diagram.",
+          "challenges": "Keeping every decision to a single condition, starting conditions with a verb, and making loop-backs return to where the flow came from.",
+          "outcome": "Use Case, Activity, State and Block diagrams were submitted for Performance 2 with a cover page.",
+          "tech": [
+            "UML",
+            "draw.io",
+            "Use Case",
+            "Activity",
+            "State",
+            "Sequence",
+            "DFD"
+          ]
+        }
+      },
+      {
+        "title": "Personal Portfolio Website",
+        "categories": [
+          "Frontend",
+          "JavaScript"
+        ],
+        "featured": false,
+        "kind": "Personal Project",
+        "text": "Single-page portfolio with JSON-driven content, light and dark theme, quick search and a chatbot.",
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "JSON"
+        ],
+        "image": "assets/projects/portfolio.webp",
+        "repo": "",
+        "github": "",
+        "demo": "#home",
+        "caseStudy": null
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "badge": "Open to Collaboration",
+    "email": "sabbirarnob171@gmail.com",
+    "phone": "01609392031",
+    "whatsapp": "",
+    "telegram": "https://t.me/Sabbir_333",
+    "formEndpoint": ""
+  },
+  "footer": {
+    "tagline": "Software Engineering student building clean and useful things for the web."
+  },
+  "chat": {
+    "title": "Ask Me",
+    "welcome": "Hi! I'm Ask Me. Pick a topic below or type a question.",
+    "fallback": "Sorry, I don't know that yet. Try one of the topics below: Skills, Projects, Education, Certificates, Updates, CV or Contact.",
+    "faq": [
+      {
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "salam",
+          "assalamu"
+        ],
+        "answer": "Hi! Nice to meet you. What would you like to know?"
+      },
+      {
+        "keywords": [
+          "who are you",
+          "who is",
+          "about",
+          "name",
+          "introduce",
+          "yourself"
+        ],
+        "answer": "I'm Md Sabbir Ahmed, a Software Engineering student at Daffodil International University."
+      },
+      {
+        "keywords": [
+          "frontend",
+          "front-end",
+          "html",
+          "css",
+          "javascript",
+          "web design"
+        ],
+        "answer": "Frontend: {frontend}."
+      },
+      {
+        "keywords": [
+          "language",
+          "java",
+          "sql",
+          "database",
+          "programming",
+          "c programming"
+        ],
+        "answer": "Languages and database: {languages}."
+      },
+      {
+        "keywords": [
+          "tool",
+          "git",
+          "vs code",
+          "vscode",
+          "version control"
+        ],
+        "answer": "Tools and version control: {tools}."
+      },
+      {
+        "keywords": [
+          "backend",
+          "api",
+          "node",
+          "json"
+        ],
+        "answer": "Backend and APIs: {backend}."
+      },
+      {
+        "keywords": [
+          "skill",
+          "skills",
+          "tech",
+          "stack",
+          "technology",
+          "technologies",
+          "know"
+        ],
+        "answer": "I work with {skills}."
+      },
+      {
+        "keywords": [
+          "demo",
+          "live demo",
+          "live"
+        ],
+        "answer": "Every project card in the Projects section has a Live Demo button. Live demos: {demos}."
+      },
+      {
+        "keywords": [
+          "project",
+          "projects",
+          "built",
+          "build",
+          "made"
+        ],
+        "answer": "My projects: {projects}."
+      },
+      {
+        "keywords": [
+          "education",
+          "study",
+          "university",
+          "cgpa",
+          "result",
+          "trimester",
+          "degree",
+          "diu",
+          "semester"
+        ],
+        "answer": "{education}"
+      },
+      {
+        "keywords": [
+          "certificate",
+          "certificates",
+          "certification",
+          "course",
+          "courses"
+        ],
+        "answer": "Certificates: {certificates}."
+      },
+      {
+        "keywords": [
+          "update",
+          "updates",
+          "news",
+          "latest",
+          "new"
+        ],
+        "answer": "Latest updates: {news}."
+      },
+      {
+        "keywords": [
+          "cv",
+          "resume",
+          "download"
+        ],
+        "answer": "You can download my CV with the Download CV button in the Home section."
+      },
+      {
+        "keywords": [
+          "github",
+          "git hub",
+          "repo",
+          "repository",
+          "source code"
+        ],
+        "answer": "My GitHub profile: {github}"
+      },
+      {
+        "keywords": [
+          "contact",
+          "email",
+          "mail",
+          "hire",
+          "reach",
+          "phone",
+          "message",
+          "telegram",
+          "get in touch"
+        ],
+        "answer": "{contact}"
+      },
+      {
+        "keywords": [
+          "thanks",
+          "thank you",
+          "thank"
+        ],
+        "answer": "You're welcome! Ask me anything else about my work."
+      }
+    ],
+    "topics": [
+      {
+        "label": "Skills",
+        "q": "skills"
+      },
+      {
+        "label": "Projects",
+        "q": "projects"
+      },
+      {
+        "label": "Education",
+        "q": "education"
+      },
+      {
+        "label": "Certificates",
+        "q": "certificates"
+      },
+      {
+        "label": "Latest Updates",
+        "q": "updates"
+      },
+      {
+        "label": "CV",
+        "q": "cv"
+      },
+      {
+        "label": "Contact",
+        "q": "contact"
+      },
+      {
+        "label": "GitHub",
+        "q": "github"
+      }
+    ]
+  }
+}

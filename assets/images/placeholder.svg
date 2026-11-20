@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f1f4"/>
+      <stop offset="0.55" stop-color="#cfe3da"/>
+      <stop offset="1" stop-color="#a9c9a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#sky)"/>
+  <ellipse cx="250" cy="560" rx="260" ry="90" fill="#8fb98a" opacity="0.55"/>
+  <ellipse cx="620" cy="600" rx="260" ry="80" fill="#7fae7c" opacity="0.5"/>
+  <circle cx="480" cy="300" r="82" fill="#7d8f87"/>
+  <path d="M290 800 C290 560 360 450 480 450 C600 450 670 560 670 800 Z" fill="#7d8f87"/>
+  <text x="400" y="765" font-family="Arial, sans-serif" font-size="26" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">Add your photo in data.json</text>
+</svg>
