@@ -1478,3 +1478,6 @@ body { overflow-x: clip; }
 .chat-topics { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; border-top: 1px solid var(--border); max-height: 92px; overflow-y: auto; }
 .chat-topics button { font: inherit; font-size: 12.5px; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--border); background: var(--pill); color: var(--text); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
 .chat-topics button:hover { background: var(--green); color: #fff; border-color: var(--green); }
+
+/* Contact eyebrow: same colour as the subtitle below */
+#contact .sec-eyebrow { color: var(--muted); }
