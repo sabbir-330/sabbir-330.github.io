@@ -1439,7 +1439,7 @@ body { overflow-x: clip; }
 /* home: photo position + text a little wider (horizontal spacing only) */
 @media (min-width: 992px) { .hero-photo { top: -4px; } }
 .hero-eyebrow { letter-spacing: 0.22em; }
-.hero-name { letter-spacing: 2px; word-spacing: 6px; }
+.hero-name { letter-spacing: 2px; word-spacing: 1px; }
 .hero-role { letter-spacing: 0.6px; word-spacing: 3px; }
 .hero-desc { letter-spacing: 0.45px; word-spacing: 2px; max-width: 580px; }
 .btn { letter-spacing: 0.4px; }
